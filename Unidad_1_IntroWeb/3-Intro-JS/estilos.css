@@ -1,0 +1,16 @@
+p{
+    color: indianred;
+    font-weight: bold;
+}
+#parrafo3{
+    color: indigo;
+}
+.colorPrincipal{
+    color: rgb(154, 8, 10);
+}
+#cuadrado{
+    width: 200px;
+    height: 200px;
+    color: white;
+    background-color: red;
+}
