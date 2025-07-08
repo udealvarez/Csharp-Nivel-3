@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-Controles-ASP-vs-HTML", "5-Controles-ASP-vs-HTML\5-Controles-ASP-vs-HTML.csproj", "{FD9D51F6-98BE-487D-9026-0AD8CF6C5E49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD9D51F6-98BE-487D-9026-0AD8CF6C5E49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD9D51F6-98BE-487D-9026-0AD8CF6C5E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD9D51F6-98BE-487D-9026-0AD8CF6C5E49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD9D51F6-98BE-487D-9026-0AD8CF6C5E49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1C87935-B27C-45A8-BF45-F69B4C25D3D6}
+	EndGlobalSection
+EndGlobal
