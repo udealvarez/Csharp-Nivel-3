@@ -69,12 +69,30 @@ namespace _5_Formulario_Completo_Varios_Controles
         protected global::System.Web.UI.WebControls.CheckBox chkUsado;
 
         /// <summary>
-        /// Control chkImportado.
+        /// Control rdbImportado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkImportado;
+        protected global::System.Web.UI.WebControls.RadioButton rdbImportado;
+
+        /// <summary>
+        /// Control rdbNacional.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rdbNacional;
+
+        /// <summary>
+        /// Control btnAceptar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAceptar;
     }
 }

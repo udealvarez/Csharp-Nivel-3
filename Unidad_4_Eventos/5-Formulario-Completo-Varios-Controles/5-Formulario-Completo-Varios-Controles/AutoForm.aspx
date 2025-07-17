@@ -33,21 +33,27 @@
                 <%--FECHA -> TextMode="DATE"--%>
             </div>
 
-            <div class="form-check">
-                <label class="form-check-label">
-                    <asp:CheckBox ID="chkUsado" runat="server" CssClass="form-check-input me-2" />
-                    Usado
-                </label>
+            <div class="mb-3">
+                <asp:CheckBox Text="" ID="chkUsado" runat="server" />
+                <asp:Label runat="server" CssClass="form-check-label" Text="Usado"></asp:Label>
+            </div>
+            <div class="mb-3">
+                <asp:RadioButton ID="rdbImportado" Text="Importado" runat="server" GroupName="Importado" />
+                <asp:RadioButton ID="rdbNacional" Text="Nacional" runat="server" GroupName="Importado" Checked="true" />
+                <%-- pongo los 2 radio buttons en un grupo llamado GroupName="Importado" y a 1 de esos lo dejo Checked="true" . de esa manera puedo solo seleccionar 1--%>
             </div>
 
-            <div class="form-check">
-                <label class="form-check-label">
-                    <asp:CheckBox ID="chkImportado" runat="server" CssClass="form-check-input me-2" />
-                    Importado
-                </label>
+            <div class="mb-3">
+                <asp:Button Text="Aceptar" ID="btnAceptar" CssClass="btn btn-primary" OnClick="btnAceptar_Click" runat="server" />
+                <a href="Default.aspx">Cancelar</a>
             </div>
 
 
+            <%--OTRA MANERA DE VER LOS RADIO BUTTONS--%>
+            <%--<div class="mb-3"> 
+                <asp:RadioButton ID="RadioButton1" AutoPostBack="true" OnCheckedChanged="RadioButton1_CheckedChanged" Text="Importado" runat="server" GroupName="Importado" />
+                <asp:RadioButton ID="RadioButton2" AutoPostBack="true" OnCheckedChanged="RadioButton1_CheckedChanged" Text="Nacional" runat="server" GroupName="Importado" Checked="true" />
+            </div>--%>
 
 
         </div>

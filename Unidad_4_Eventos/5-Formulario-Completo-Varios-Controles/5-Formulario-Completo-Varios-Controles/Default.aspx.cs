@@ -12,9 +12,13 @@ namespace _5_Formulario_Completo_Varios_Controles
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            AutoNegocio negocio = new AutoNegocio();
-
-            dgvAutos.DataSource = negocio.listar();
+            if (Session["listaAutos"] == null)
+            {
+                AutoNegocio negocio = new AutoNegocio();
+                Session.Add("listaAutos", negocio.listar());
+            }
+                      
+            dgvAutos.DataSource = Session["listaAutos"];
             dgvAutos.DataBind(); // DATA BIND -> ES PARA RENDERIZAR LA LISTA EN LA PANTALLA
         }
     }
