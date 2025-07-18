@@ -11,7 +11,10 @@
     <hr />
     <div class="row">
         <div class="col">
-            <asp:GridView ID="dgvAutos" OnSelectedIndexChanged="dgvAutos_SelectedIndexChanged" runat="server" CssClass="table table-dark table-bordered" AutoGenerateColumns="false">
+             
+            <asp:GridView ID="dgvAutos" OnSelectedIndexChanged="dgvAutos_SelectedIndexChanged" DataKeyNames="Id" runat="server" CssClass="table table-dark table-bordered" AutoGenerateColumns="false">
+                
+                <%--lo que ponga en DataKeyNames="Id" tiene que ser la PROPIEDAD de la clase del objeto--%>
 
                 <Columns>
                     <%--<asp:BoundField HeaderText="Id" DataField="Id" HeaderStyle-CssClass="oculto" ItemStyle-CssClass="oculto" />--%>

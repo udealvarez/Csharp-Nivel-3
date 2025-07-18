@@ -24,7 +24,11 @@ namespace _6_Seleccionar_Registro_de_grilla
 
         protected void dgvAutos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var algo = dgvAutos.SelectedRow.Cells[0].Text;
+            //var algo = dgvAutos.SelectedRow.Cells[0].Text; ->  COMENTE ESTA LINEA PARA  USAR EL DATAKEY
+
+            var id = dgvAutos.SelectedDataKey.Value.ToString(); // esto es la clave seleccionada de DataKeyNames="Id"
+
+            Response.Redirect("AutoForm.aspx?id=" + id);
         }
     }
 }

@@ -18,6 +18,19 @@ namespace _6_Seleccionar_Registro_de_grilla
                 ddlColores.Items.Add("blanco");
                 ddlColores.Items.Add("rojo");
             }
+
+            if (Request.QueryString["id"] != null)
+            {
+                int id = int.Parse(Request.QueryString["id"].ToString());
+                List<Auto> temporal = (List<Auto>)Session["listaAutos"];
+                Auto autoSeleccionado = temporal.Find(x => x.Id == id); // esto me devuelve de la lista el objeto seleccionado
+
+                txtModelo.Text = autoSeleccionado.Modelo;
+                txtId.Text = autoSeleccionado.Id.ToString();
+                txtId.ReadOnly = true;  // esto no permite modificar el ID cuando ves el detalle del auto seleccionado IMPORTANTE
+            } 
+
+
         }
 
         protected void btnAceptar_Click(object sender, EventArgs e)
