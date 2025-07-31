@@ -12,13 +12,16 @@ namespace _7_Practica_ASP
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["listaDirecciones"] == null)
+            if (!IsPostBack)
             {
-                DireccionNegocio negocio = new DireccionNegocio();
-                Session.Add("listaDirecciones", negocio.listarDirecciones());
-            }
+                if (Session["listaDirecciones"] == null)
+                {
+                    DireccionNegocio negocio = new DireccionNegocio();
+                    Session.Add("listaDirecciones", negocio.listarDirecciones());
+                }
 
-            cargarGrilla();
+                cargarGrilla();
+            }
         }
 
         private void cargarGrilla()
@@ -45,8 +48,9 @@ namespace _7_Practica_ASP
             {
                 temporal.Remove(aEliminar);
                 Session["listaDirecciones"] = temporal;
-                cargarGrilla();
             }
+            cargarGrilla();
+
         }
     }
 }

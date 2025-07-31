@@ -24,11 +24,7 @@ namespace _7_Practica_ASP
                 int id = int.Parse(Request.QueryString["id"]);
                 List<Direccion> temporal = (List<Direccion>)Session["listaDirecciones"];
                 Direccion direcSeleccionada = temporal.Find(x => x.Id == id);
-
-                //txtCodigoPostal.Text = direcSeleccionada.CodigoPostal.ToString();
-                //txtCalle.Text = direcSeleccionada.Calle;
-                //txtCalle.ReadOnly = true;
-
+                              
                 if (direcSeleccionada != null)
                 {
                     ViewState["idModificar"] = id;
@@ -72,21 +68,6 @@ namespace _7_Practica_ASP
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
-            //Direccion direccion = new Direccion();
-
-            //direccion.Calle = txtCalle.Text;
-            //direccion.Altura = int.Parse(txtAltura.Text);
-            //direccion.Ciudad = ddlCiudad.SelectedValue;
-            //direccion.Provincia = ddlProvincia.SelectedValue;
-            //direccion.CodigoPostal = int.Parse(txtCodigoPostal.Text);
-            //direccion.FechaRegistro = DateTime.Parse(txtFechaRegistro.Text);
-            //direccion.EsComercial = checkComercial.Checked;
-
-            //List<Direccion> temporal = (List<Direccion>)Session["listaDirecciones"];
-            //temporal.Add(direccion);
-
-            //Response.Redirect("Default.aspx");
-
             List<Direccion> temporal = (List<Direccion>)Session["listaDirecciones"];
 
             if (ViewState["idModificar"] != null)
