@@ -109,7 +109,7 @@ namespace _1_Seteos_de_proyecto
                 nuevo.Debilidad.Id = int.Parse(ddlDebilidad.SelectedValue);
 
 
-                negocio.agregar(nuevo);
+                negocio.agregarConSP(nuevo);
                 //if (Request.QueryString["id"] != null)
                 //{
                 //    nuevo.Id = int.Parse(txtId.Text);
